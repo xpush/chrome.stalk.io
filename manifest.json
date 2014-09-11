@@ -1,31 +1,30 @@
 {
   "name": "stalk.io",
-  "version": "0.2.0",
+  "version": "1.0.1",
   "manifest_version": 2,
-  "description": "",
+  "description": "STALK.IO chat widget. You can chat with every one who watch the same web page",
   "icons": {
     "16": "images/stalk_16.png",
+    "48": "images/stalk_48.png",
     "128": "images/stalk_128.png"
   },
-  "content_scripts": [
-    {
-      "matches": [ "http://*/*", "https://*/*"],
-      "js": [
-        "jquery.min.js",
-        "stalk.js",
-        "main.js"
+  "browser_action": {
+    "default_icon": "images/stalk_16.png"
+  },
+  "background": {
+        "scripts": ["background.js"]
+  },
+  
 
-      ],
-      "css": [
-      ]
-    }
-  ],
 
-  "web_accessible_resources" : ["stalk.js"],
+
+  "web_accessible_resources" : ["stalk.js","images/stalk_16.png"],
 
   "permissions": [
-   "http://chat.stalk.io:8000/node/stalk-io", "https://*/*"
+    "tabs", "http://*/*", "https://*/*"
   ]
 
 
 }
+
+
