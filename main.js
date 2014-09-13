@@ -131,18 +131,4 @@
   
 
 
-
-
-  //console.log(STALK);
-  //STALK.init();
-
-  /*makeButton(url);
-  if (url) {
-    checkRepoOrPage(url, function(isExist) {
-      if (isExist) {
-        makeButton(url);
-      }
-    });
-  }*/
-
 })();
