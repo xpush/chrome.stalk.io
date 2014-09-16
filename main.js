@@ -80,8 +80,8 @@
   var stalkio = function(){
     console.log(location);
     if(location.protocol=='http:'){
-      var url = chrome.extension.getURL("stalk.js");
-      //var url = 'http://www.stalk.io/stalk.js'
+      //var url = chrome.extension.getURL("stalk.js");
+      var url = 'http://www.stalk.io/stalk.js'
 
       _S_BK.loadScript(url, function(){
 
