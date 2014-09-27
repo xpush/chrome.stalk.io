@@ -1,6 +1,6 @@
 {
   "name": "stalk.io",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "manifest_version": 2,
   "description": "STALK.IO chat widget. You can chat with every one who watch the same web page",
   "icons": {
